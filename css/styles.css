@@ -672,8 +672,6 @@ img {
 
 /* ==========================ModalWindow============================ */
 .modal{
-    /* display: flex;
-    justify-content: space-between; */
     position: absolute;
     top: 50%;
     left: 50%;    
@@ -704,6 +702,11 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
 }   
+.modal-btn-close-icon:focus,
+.modal-btn-close-icon:hover{
+    fill: var(--main-link-color);
+}
+
 /* ==========================/ModalWindow============================ */
 
 /* ==========================ModalForm============================ */
@@ -777,5 +780,68 @@ img {
     line-height: 1.17;
     letter-spacing: 0.01em;    
     color: rgba(117, 117, 117, 0.5);
+}
+.modal-form-check-field{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;    
+    color: #757575;   
+}
+.modal-form-own-checkbox{
+    width: 16px;
+    height: 15px;
+    border: 1px solid #212121;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 7px;
+}
+.modal-form-own-checkbox-icon{
+    display: none;
+}
+.modal-form-check:checked + .modal-form-own-checkbox{
+    background-color: var(--main-link-color);
+    border: none;
+}
+.modal-form-check:checked + .modal-form-own-checkbox .modal-form-own-checkbox-icon{
+    display: block;
+}
+.modal-form-check:focus + .modal-form-own-checkbox{
+    outline: none;
+    border-color: var(--main-link-color);
+}
+.modal-form-check-policy{
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;    
+    color: #2196F3;
+}
+.modal-form-send{
+    min-width: 200px;
+    min-height: 50px;
+    align-self: center;
+    padding: 10px 52px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em; 
+    cursor: pointer;   
+    color: #FFFFFF;
+}
+.modal-form-send:focus{
+    outline: none;
 }
     

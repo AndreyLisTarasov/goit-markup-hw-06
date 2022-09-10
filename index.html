@@ -440,9 +440,12 @@
                     <span class="modal-form-field-desc">Коментар</span>
                     <textarea name="user_message" class="modal-form-message" placeholder="Введіть текст"></textarea>
                 </label>
-                <label class="modal-form-field">
-                    <input type="checkbox" name="user_policy" class="modal-form-check" required>
-                    Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+                <label class="modal-form-check-field">
+                    <input type="checkbox" name="user_policy" class="modal-form-check visually-hidden" required>
+                    <svg class="modal-form-own-checkbox">
+                        <use class="modal-form-own-checkbox-icon" href="./images/icons.svg#icon-check"></use>
+                    </svg>
+                    Погоджуюся з розсилкою та приймаю&nbsp;<a class="modal-form-check-policy" href="">Умови договору</a>
                 </label>
                 <button type="submit" class="modal-form-send">Відправити</button>              
             </form>
