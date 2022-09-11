@@ -228,7 +228,7 @@
     </main>
     <!-- Подвал -->
     <footer class="footer">       
-        <div class="footer-container">
+        <div class="container">
             <div class="footer-address">               
                 <address class="address">
                     <a href="" class="logo secondary"><span class="text">Web</span><span class="other">Studio</span></a>  
@@ -275,20 +275,21 @@
                     </a>
                     </li>
                 </ul>
-            </div> 
-            <div class="subscribe">
-                <p class="subscribe-title">Підпишіться на розсилку</p>
-                <form class="subscribe-form">
-                    <input type="email" name="mail" placeholder="E-mail" class="subscribe-form-input" >
-                    <label for="mail"></label>
+            </div>  
+            <div class="subscribe">                
+                <form class="subscribe-form">                                       
+                    <label class="subscribe-form-field">
+                        <span class="subscribe-form-title">Підпишіться на розсилку</span> 
+                        <input type="email" name="mail" placeholder="E-mail" class="subscribe-form-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >
+                    </label>
                     <button type="submit" class="subscribe-form-btn">Підписатися
                         <svg class="subscribe-form-send" width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
                     </svg>            
                     </button>                                         
                 </form>
-            </div>         
+            </div>      
         </div>
-    </footer> 
+    </footer>
 </body>
 </html>
