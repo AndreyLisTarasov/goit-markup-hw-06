@@ -701,6 +701,7 @@ img {
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }   
 .modal-btn-close-icon:focus,
 .modal-btn-close-icon:hover{
@@ -768,7 +769,7 @@ img {
     border-radius: 4px;
     padding: 16px;
     resize: none;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-message:focus{
     outline: none;
@@ -794,10 +795,12 @@ img {
 .modal-form-own-checkbox{
     width: 16px;
     height: 15px;
-    border: 1px solid #212121;
+    border: 2px solid #212121;
     border-radius: 2px;
     cursor: pointer;
     margin-right: 7px;
+    margin-left: 12px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-own-checkbox-icon{
     display: none;
@@ -821,6 +824,12 @@ img {
     letter-spacing: 0.03em;
     text-decoration-line: underline;    
     color: #2196F3;
+    border: 1px solid transparent;
+    outline: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-check-policy:focus{
+    border: 1px solid var(--main-link-color);
 }
 .modal-form-send{
     min-width: 200px;
@@ -829,19 +838,22 @@ img {
     padding: 10px 52px;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: none;
+    border: 1px;
     border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    text-align: center;
+    text-align: center; */
     letter-spacing: 0.06em; 
     cursor: pointer;   
     color: #FFFFFF;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-send:focus{
+.modal-form-send:focus,
+.modal-form-send:hover{
     outline: none;
+    border: 1px solid var(--main-link-color);
 }
     
